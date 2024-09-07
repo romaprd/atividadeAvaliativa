@@ -1,9 +1,9 @@
-programa//atividade 14
+programa//atividade 14
 {
 	
 	funcao inicio()
 	{
-		inteiro N[2][2],i , j, quantidadeDeNegativos = 0,n
+		inteiro N[10][10],i , j, quantidadeDeNegativos = 0,n
 faca{
 		escreva("informe um numero inteiro(maximo 10): ")
 		leia(n)
@@ -17,33 +17,25 @@ faca{
 			//exibir diagonal principal
 			escreva("diagonal princiapal: ")
 			para (i = 0; i < n; i++){
-				escreva(N[i][i], " ")}
+				se(N[i][i] < 0){
+				escreva(N[i][i], " ")
+				}
+			}
 				//contar valores negativos
 				para(i = 0; i < n; i++){
-			para(j = 0; j < n; j++){
-			se(N[i][j] < 0){
+			
+			se(N[i][i] < 0){
 				quantidadeDeNegativos = quantidadeDeNegativos + 1
 				}
 				//exibir quantidade de valores negativos
-				escreva("\na quantidade de valores negativos eh: ", quantidadeDeNegativos,"\n")
+				escreva("\na quantidade de valores negativos a partir do ", i+1,"º quadrado da diagonal princiapal eh: ", quantidadeDeNegativos,"\n")
 			}
 			}
 			}
 		 
 			
-			}
+			
 
 
 	
 
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 104; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {N, 6, 10, 1}-{i, 6, 18, 1}-{j, 6, 22, 1}-{quantidadeDeNegativos, 6, 25, 21}-{n, 6, 51, 1};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
